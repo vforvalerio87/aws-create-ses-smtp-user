@@ -8,7 +8,7 @@ const fromAddress = process.argv[3]
 const message = "SendRawEmail"
 const versionInBytes = 0x02
 
-const PolicyDocument = `{"Version":"2012-10-17","Statement":[{"Effect": "Allow","Action": "ses:SendRawEmail","Resource": "*","Condition":{"StringEquals":{"ses:FromAddress":"${fromAddress}"}}}]}`
+const PolicyDocument = `{"Version":"2012-10-17","Statement":[{"Effect": "Allow","Action": "ses:SendRawEmail","Resource": "*","Condition":{"StringLike":{"ses:FromAddress":"${fromAddress}"}}}]}`
 
 iam.createUser({ UserName }).promise()
   .then(() => iam.createAccessKey({ UserName }).promise())
