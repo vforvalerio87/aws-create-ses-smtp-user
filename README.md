@@ -5,4 +5,4 @@ Get dependencies:
 ```npm install```
 
 Run program:
-```npm start <userName> <email>```
+```npm start "<userName>" "<email>"```
