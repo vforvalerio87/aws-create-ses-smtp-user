@@ -1,7 +1,11 @@
 {
   "name": "aws-create-ses-smtp-user",
   "version": "1.0.0",
-  "description": "",
+  "description": "aws-create-ses-smtp-user",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/vforvalerio87/aws-create-ses-smtp-user"
+  }
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
